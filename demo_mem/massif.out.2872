@@ -1,0 +1,4435 @@
+desc: --time-unit=ms --detailed-freq=1000000 --depth=1 --max-snapshots=500
+cmd: cmake-build-debug_wsl/tests/fault-tolerance/checkpoint-jac2d-recovery --checkpointFrequency 10 --failureCheckFrequency 10 --redundancyCount 1 --rotationDistance 1 --plannedFailure 1 15 --progressReportInterval 1 4096 30 -1
+time_unit: ms
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=770
+mem_heap_B=552
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=775
+mem_heap_B=4768
+mem_heap_extra_B=40
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=781
+mem_heap_B=4768
+mem_heap_extra_B=40
+mem_stacks_B=0
+heap_tree=detailed
+n3: 4768 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 4096 0x650618A: _IO_file_doallocate (filedoalloc.c:101)
+ n0: 552 0x6506E48: fopen@@GLIBC_2.2.5 (iofopen.c:65)
+ n0: 120 0x6507B8A: getdelim (iogetdelim.c:62)
+#-----------
+snapshot=4
+#-----------
+time=786
+mem_heap_B=4
+mem_heap_extra_B=20
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=793
+mem_heap_B=19004
+mem_heap_extra_B=132
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=799
+mem_heap_B=19422
+mem_heap_extra_B=186
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=807
+mem_heap_B=23862
+mem_heap_extra_B=818
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=815
+mem_heap_B=29752
+mem_heap_extra_B=1688
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=819
+mem_heap_B=32388
+mem_heap_extra_B=2252
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=826
+mem_heap_B=36420
+mem_heap_extra_B=2252
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=832
+mem_heap_B=36508
+mem_heap_extra_B=2268
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=838
+mem_heap_B=36892
+mem_heap_extra_B=2380
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=845
+mem_heap_B=37145
+mem_heap_extra_B=2455
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=850
+mem_heap_B=37171
+mem_heap_extra_B=2469
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=856
+mem_heap_B=37318
+mem_heap_extra_B=2538
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=861
+mem_heap_B=37329
+mem_heap_extra_B=2551
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=869
+mem_heap_B=38766
+mem_heap_extra_B=2874
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=876
+mem_heap_B=194881
+mem_heap_extra_B=2991
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=884
+mem_heap_B=195935
+mem_heap_extra_B=3441
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=892
+mem_heap_B=196411
+mem_heap_extra_B=3597
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=896
+mem_heap_B=197916
+mem_heap_extra_B=4060
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=903
+mem_heap_B=281278
+mem_heap_extra_B=4426
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=911
+mem_heap_B=281790
+mem_heap_extra_B=4434
+mem_stacks_B=0
+heap_tree=detailed
+n9: 281790 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 149856 0x7B9A33C: opal_hash_table_init2 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 65544 0x7BE6BE6: opal_util_keyval_yylex (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 17688 0x73D6AB7: g_malloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.4)
+ n0: 16386 0x7BE5BC1: opal_util_keyval_yy_create_buffer (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 14048 0x73D6B0F: g_malloc0 (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.4)
+ n0: 6068 in 32 places, all below massif's threshold (1.00%)
+ n0: 5032 0x73D6B6E: g_realloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.4)
+ n0: 4096 0x7BC6F4D: mca_base_var_cache_files (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 3072 0x7B9E7BE: opal_pointer_array_init (in /usr/local/lib/libopen-pal.so.0.0.0)
+#-----------
+snapshot=24
+#-----------
+time=919
+mem_heap_B=202001
+mem_heap_extra_B=5263
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=923
+mem_heap_B=206676
+mem_heap_extra_B=6700
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=929
+mem_heap_B=208238
+mem_heap_extra_B=7306
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=940
+mem_heap_B=208227
+mem_heap_extra_B=7293
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=949
+mem_heap_B=208175
+mem_heap_extra_B=7241
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=954
+mem_heap_B=208975
+mem_heap_extra_B=7249
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=958
+mem_heap_B=209293
+mem_heap_extra_B=7331
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=963
+mem_heap_B=210292
+mem_heap_extra_B=7564
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=971
+mem_heap_B=210372
+mem_heap_extra_B=7572
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=979
+mem_heap_B=213582
+mem_heap_extra_B=8490
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=987
+mem_heap_B=217997
+mem_heap_extra_B=9923
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=991
+mem_heap_B=218672
+mem_heap_extra_B=10224
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=996
+mem_heap_B=227422
+mem_heap_extra_B=10250
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=1004
+mem_heap_B=261091
+mem_heap_extra_B=10637
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=1009
+mem_heap_B=262197
+mem_heap_extra_B=11019
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=1016
+mem_heap_B=264278
+mem_heap_extra_B=11770
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=1024
+mem_heap_B=232516
+mem_heap_extra_B=12164
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=1032
+mem_heap_B=232580
+mem_heap_extra_B=12172
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=1040
+mem_heap_B=258686
+mem_heap_extra_B=17258
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=1048
+mem_heap_B=257358
+mem_heap_extra_B=16634
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=1052
+mem_heap_B=259559
+mem_heap_extra_B=17281
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=1057
+mem_heap_B=259871
+mem_heap_extra_B=17313
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=1061
+mem_heap_B=261194
+mem_heap_extra_B=17750
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=1066
+mem_heap_B=263106
+mem_heap_extra_B=18326
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=1074
+mem_heap_B=267210
+mem_heap_extra_B=19542
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=1082
+mem_heap_B=273382
+mem_heap_extra_B=22026
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=1090
+mem_heap_B=276684
+mem_heap_extra_B=23012
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=1098
+mem_heap_B=282799
+mem_heap_extra_B=25201
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=1102
+mem_heap_B=287754
+mem_heap_extra_B=27190
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=1107
+mem_heap_B=294300
+mem_heap_extra_B=27940
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=1119
+mem_heap_B=294300
+mem_heap_extra_B=27940
+mem_stacks_B=0
+heap_tree=detailed
+n13: 294300 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 158528 0x7B9A33C: opal_hash_table_init2 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 20059 0x65259B8: strdup (strdup.c:42)
+ n0: 18984 0x7BC4810: register_variable (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 18656 0x7BC1172: process_repository_item (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 17688 0x73D6AB7: g_malloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.4)
+ n0: 14048 0x73D6B0F: g_malloc0 (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.4)
+ n0: 13917 in 38 places, all below massif's threshold (1.00%)
+ n0: 9240 0x7BCC60E: mca_base_var_group_register (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 6084 0x7BC3F86: mca_base_var_generate_full_name4 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 5032 0x73D6B6E: g_realloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.4)
+ n0: 4096 0x650618A: _IO_file_doallocate (filedoalloc.c:101)
+ n0: 4096 0x7BC6F4D: mca_base_var_cache_files (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 3872 0x7B9E7BE: opal_pointer_array_init (in /usr/local/lib/libopen-pal.so.0.0.0)
+#-----------
+snapshot=55
+#-----------
+time=1126
+mem_heap_B=293039
+mem_heap_extra_B=29225
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=1132
+mem_heap_B=293871
+mem_heap_extra_B=29345
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=1138
+mem_heap_B=294515
+mem_heap_extra_B=29405
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=1142
+mem_heap_B=296216
+mem_heap_extra_B=29992
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=1147
+mem_heap_B=296677
+mem_heap_extra_B=30131
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=1154
+mem_heap_B=298462
+mem_heap_extra_B=30186
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=1162
+mem_heap_B=302451
+mem_heap_extra_B=30685
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=1169
+mem_heap_B=308739
+mem_heap_extra_B=32381
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=1177
+mem_heap_B=308756
+mem_heap_extra_B=32404
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=1180
+mem_heap_B=308739
+mem_heap_extra_B=32381
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=1186
+mem_heap_B=308571
+mem_heap_extra_B=32365
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=1194
+mem_heap_B=312388
+mem_heap_extra_B=34404
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=1202
+mem_heap_B=315857
+mem_heap_extra_B=35575
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=1210
+mem_heap_B=321527
+mem_heap_extra_B=37489
+mem_stacks_B=0
+heap_tree=detailed
+n12: 321527 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 158528 0x7B9A33C: opal_hash_table_init2 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 28896 0x7BC4810: register_variable (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 25300 0x65259B8: strdup (strdup.c:42)
+ n0: 22126 in 62 places, all below massif's threshold (1.00%)
+ n0: 18656 0x7BC1172: process_repository_item (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 17688 0x73D6AB7: g_malloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.4)
+ n0: 14048 0x73D6B0F: g_malloc0 (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.4)
+ n0: 13160 0x7BCC60E: mca_base_var_group_register (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 9397 0x7BC3F86: mca_base_var_generate_full_name4 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 5032 0x73D6B6E: g_realloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.4)
+ n0: 4600 0x7B9A899: opal_hash_table_set_value_ptr (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 4096 0x7BC6F4D: mca_base_var_cache_files (in /usr/local/lib/libopen-pal.so.0.0.0)
+#-----------
+snapshot=69
+#-----------
+time=1218
+mem_heap_B=328246
+mem_heap_extra_B=39738
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=70
+#-----------
+time=1226
+mem_heap_B=333920
+mem_heap_extra_B=41736
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=71
+#-----------
+time=1234
+mem_heap_B=341648
+mem_heap_extra_B=44680
+mem_stacks_B=0
+heap_tree=detailed
+n12: 341648 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 158528 0x7B9A33C: opal_hash_table_init2 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 37800 0x7BC4810: register_variable (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 30011 0x65259B8: strdup (strdup.c:42)
+ n0: 23513 in 62 places, all below massif's threshold (1.00%)
+ n0: 18656 0x7BC1172: process_repository_item (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 17688 0x73D6AB7: g_malloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.4)
+ n0: 14560 0x7BCC60E: mca_base_var_group_register (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 14048 0x73D6B0F: g_malloc0 (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.4)
+ n0: 11978 0x7BC3F86: mca_base_var_generate_full_name4 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 5738 0x7B9A899: opal_hash_table_set_value_ptr (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 5032 0x73D6B6E: g_realloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.4)
+ n0: 4096 0x7BC6F4D: mca_base_var_cache_files (in /usr/local/lib/libopen-pal.so.0.0.0)
+#-----------
+snapshot=72
+#-----------
+time=1240
+mem_heap_B=342221
+mem_heap_extra_B=44963
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=73
+#-----------
+time=1248
+mem_heap_B=351527
+mem_heap_extra_B=46609
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=74
+#-----------
+time=1256
+mem_heap_B=357046
+mem_heap_extra_B=48514
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=75
+#-----------
+time=1264
+mem_heap_B=365429
+mem_heap_extra_B=50883
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=76
+#-----------
+time=1268
+mem_heap_B=367074
+mem_heap_extra_B=50990
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=77
+#-----------
+time=1274
+mem_heap_B=370170
+mem_heap_extra_B=51310
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=78
+#-----------
+time=1281
+mem_heap_B=370426
+mem_heap_extra_B=51318
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=79
+#-----------
+time=1287
+mem_heap_B=375664
+mem_heap_extra_B=52504
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=80
+#-----------
+time=1298
+mem_heap_B=375832
+mem_heap_extra_B=52520
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=81
+#-----------
+time=1306
+mem_heap_B=377508
+mem_heap_extra_B=53412
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=82
+#-----------
+time=1311
+mem_heap_B=377500
+mem_heap_extra_B=53412
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=83
+#-----------
+time=1318
+mem_heap_B=377821
+mem_heap_extra_B=53515
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=84
+#-----------
+time=1324
+mem_heap_B=377862
+mem_heap_extra_B=53562
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=85
+#-----------
+time=1328
+mem_heap_B=378153
+mem_heap_extra_B=53815
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=86
+#-----------
+time=1333
+mem_heap_B=468077
+mem_heap_extra_B=53923
+mem_stacks_B=0
+heap_tree=detailed
+n12: 468077 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 158528 0x7B9A33C: opal_hash_table_init2 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 83584 0xB60195C: ???
+ n0: 46669 in 80 places, all below massif's threshold (1.00%)
+ n0: 46032 0x7BC4810: register_variable (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 33250 0x65259B8: strdup (strdup.c:42)
+ n0: 18656 0x7BC1172: process_repository_item (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 18480 0x7BCC60E: mca_base_var_group_register (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 17688 0x73D6AB7: g_malloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.4)
+ n0: 14529 0x7BC3F86: mca_base_var_generate_full_name4 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 14048 0x73D6B0F: g_malloc0 (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.4)
+ n0: 9683 0x400C0FF: _dl_new_object (dl-object.c:73)
+ n0: 6930 0x7B9A899: opal_hash_table_set_value_ptr (in /usr/local/lib/libopen-pal.so.0.0.0)
+#-----------
+snapshot=87
+#-----------
+time=1341
+mem_heap_B=468769
+mem_heap_extra_B=54247
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=88
+#-----------
+time=1349
+mem_heap_B=470113
+mem_heap_extra_B=54655
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=89
+#-----------
+time=1356
+mem_heap_B=554299
+mem_heap_extra_B=55301
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=90
+#-----------
+time=1360
+mem_heap_B=554811
+mem_heap_extra_B=55309
+mem_stacks_B=0
+heap_tree=detailed
+n14: 554811 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 158528 0x7B9A33C: opal_hash_table_init2 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 83584 0xB60195C: ???
+ n0: 65544 0xB67A926: ???
+ n0: 50346 in 92 places, all below massif's threshold (1.00%)
+ n0: 46032 0x7BC4810: register_variable (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 34377 0x65259B8: strdup (strdup.c:42)
+ n0: 18656 0x7BC1172: process_repository_item (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 18480 0x7BCC60E: mca_base_var_group_register (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 17688 0x73D6AB7: g_malloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.4)
+ n0: 16386 0xB679901: ???
+ n0: 14529 0x7BC3F86: mca_base_var_generate_full_name4 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 14048 0x73D6B0F: g_malloc0 (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.4)
+ n0: 9683 0x400C0FF: _dl_new_object (dl-object.c:73)
+ n0: 6930 0x7B9A899: opal_hash_table_set_value_ptr (in /usr/local/lib/libopen-pal.so.0.0.0)
+#-----------
+snapshot=91
+#-----------
+time=1367
+mem_heap_B=476528
+mem_heap_extra_B=56904
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=92
+#-----------
+time=1375
+mem_heap_B=479700
+mem_heap_extra_B=57932
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=93
+#-----------
+time=1383
+mem_heap_B=522658
+mem_heap_extra_B=58598
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=94
+#-----------
+time=1391
+mem_heap_B=495345
+mem_heap_extra_B=59071
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=95
+#-----------
+time=1396
+mem_heap_B=498983
+mem_heap_extra_B=60001
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=96
+#-----------
+time=1401
+mem_heap_B=500609
+mem_heap_extra_B=60135
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=97
+#-----------
+time=1407
+mem_heap_B=502790
+mem_heap_extra_B=60314
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=98
+#-----------
+time=1414
+mem_heap_B=507153
+mem_heap_extra_B=61623
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=99
+#-----------
+time=1422
+mem_heap_B=510089
+mem_heap_extra_B=62343
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=100
+#-----------
+time=1430
+mem_heap_B=512805
+mem_heap_extra_B=63083
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=101
+#-----------
+time=1438
+mem_heap_B=515167
+mem_heap_extra_B=63697
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=102
+#-----------
+time=1442
+mem_heap_B=516926
+mem_heap_extra_B=64138
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=103
+#-----------
+time=1449
+mem_heap_B=523180
+mem_heap_extra_B=65532
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=104
+#-----------
+time=1457
+mem_heap_B=527614
+mem_heap_extra_B=67154
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=105
+#-----------
+time=1465
+mem_heap_B=532675
+mem_heap_extra_B=68205
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=106
+#-----------
+time=1469
+mem_heap_B=536816
+mem_heap_extra_B=69344
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=107
+#-----------
+time=1474
+mem_heap_B=541624
+mem_heap_extra_B=70624
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=108
+#-----------
+time=1480
+mem_heap_B=545827
+mem_heap_extra_B=71397
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=109
+#-----------
+time=1487
+mem_heap_B=554527
+mem_heap_extra_B=71593
+mem_stacks_B=0
+heap_tree=detailed
+n13: 554527 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 158528 0x7B9A33C: opal_hash_table_init2 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 92256 0xB60195C: ???
+ n0: 89550 in 248 places, all below massif's threshold (1.00%)
+ n0: 46032 0x7BC4810: register_variable (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 42318 0x65259B8: strdup (strdup.c:42)
+ n0: 21736 0x400C0FF: _dl_new_object (dl-object.c:73)
+ n0: 18656 0x7BC1172: process_repository_item (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 18480 0x7BCC60E: mca_base_var_group_register (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 17688 0x73D6AB7: g_malloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.4)
+ n0: 14529 0x7BC3F86: mca_base_var_generate_full_name4 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 14048 0x73D6B0F: g_malloc0 (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.4)
+ n0: 13776 0xB65E3FF: ???
+ n0: 6930 0x7B9A899: opal_hash_table_set_value_ptr (in /usr/local/lib/libopen-pal.so.0.0.0)
+#-----------
+snapshot=110
+#-----------
+time=1491
+mem_heap_B=558327
+mem_heap_extra_B=73065
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=111
+#-----------
+time=1497
+mem_heap_B=564550
+mem_heap_extra_B=73186
+mem_stacks_B=0
+heap_tree=detailed
+n13: 564550 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 158528 0x7B9A33C: opal_hash_table_init2 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 97464 in 249 places, all below massif's threshold (1.00%)
+ n0: 92256 0xB60195C: ???
+ n0: 46032 0x7BC4810: register_variable (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 42747 0x65259B8: strdup (strdup.c:42)
+ n0: 21736 0x400C0FF: _dl_new_object (dl-object.c:73)
+ n0: 18656 0x7BC1172: process_repository_item (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 18480 0x7BCC60E: mca_base_var_group_register (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 17688 0x73D6AB7: g_malloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.4)
+ n0: 15456 0xB65E3FF: ???
+ n0: 14529 0x7BC3F86: mca_base_var_generate_full_name4 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 14048 0x73D6B0F: g_malloc0 (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.4)
+ n0: 6930 0x7B9A899: opal_hash_table_set_value_ptr (in /usr/local/lib/libopen-pal.so.0.0.0)
+#-----------
+snapshot=112
+#-----------
+time=1505
+mem_heap_B=562820
+mem_heap_extra_B=74268
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=113
+#-----------
+time=1509
+mem_heap_B=565529
+mem_heap_extra_B=74759
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=114
+#-----------
+time=1516
+mem_heap_B=567889
+mem_heap_extra_B=74911
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=115
+#-----------
+time=1524
+mem_heap_B=570983
+mem_heap_extra_B=75049
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=116
+#-----------
+time=1532
+mem_heap_B=571080
+mem_heap_extra_B=75120
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=117
+#-----------
+time=1539
+mem_heap_B=571264
+mem_heap_extra_B=75120
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=118
+#-----------
+time=1543
+mem_heap_B=571576
+mem_heap_extra_B=75160
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=119
+#-----------
+time=1548
+mem_heap_B=571776
+mem_heap_extra_B=75176
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=120
+#-----------
+time=1555
+mem_heap_B=571738
+mem_heap_extra_B=75190
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=121
+#-----------
+time=1562
+mem_heap_B=571290
+mem_heap_extra_B=75158
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=122
+#-----------
+time=1567
+mem_heap_B=572404
+mem_heap_extra_B=75204
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=123
+#-----------
+time=1572
+mem_heap_B=572452
+mem_heap_extra_B=75212
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=124
+#-----------
+time=1577
+mem_heap_B=580836
+mem_heap_extra_B=75244
+mem_stacks_B=0
+heap_tree=detailed
+n13: 580836 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 158528 0x7B9A33C: opal_hash_table_init2 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 110763 in 274 places, all below massif's threshold (1.00%)
+ n0: 92256 0xB60195C: ???
+ n0: 46032 0x7BC4810: register_variable (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 43351 0x65259B8: strdup (strdup.c:42)
+ n0: 22943 0x400C0FF: _dl_new_object (dl-object.c:73)
+ n0: 18656 0x7BC1172: process_repository_item (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 18480 0x7BCC60E: mca_base_var_group_register (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 17688 0x73D6AB7: g_malloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.4)
+ n0: 16632 0xB65E3FF: ???
+ n0: 14529 0x7BC3F86: mca_base_var_generate_full_name4 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 14048 0x73D6B0F: g_malloc0 (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.4)
+ n0: 6930 0x7B9A899: opal_hash_table_set_value_ptr (in /usr/local/lib/libopen-pal.so.0.0.0)
+#-----------
+snapshot=125
+#-----------
+time=1585
+mem_heap_B=581943
+mem_heap_extra_B=75353
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=126
+#-----------
+time=1589
+mem_heap_B=581943
+mem_heap_extra_B=75369
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=127
+#-----------
+time=1594
+mem_heap_B=582756
+mem_heap_extra_B=75716
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=128
+#-----------
+time=1601
+mem_heap_B=582852
+mem_heap_extra_B=75732
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=129
+#-----------
+time=1609
+mem_heap_B=583546
+mem_heap_extra_B=75782
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=130
+#-----------
+time=1617
+mem_heap_B=581746
+mem_heap_extra_B=75718
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=131
+#-----------
+time=1623
+mem_heap_B=582122
+mem_heap_extra_B=76126
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=132
+#-----------
+time=1631
+mem_heap_B=600154
+mem_heap_extra_B=76014
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=133
+#-----------
+time=1637
+mem_heap_B=634940
+mem_heap_extra_B=76068
+mem_stacks_B=0
+heap_tree=detailed
+n12: 634940 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 158528 0x7B9A33C: opal_hash_table_init2 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 144192 0xB60195C: ???
+ n0: 119805 in 298 places, all below massif's threshold (1.00%)
+ n0: 46032 0x7BC4810: register_variable (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 43407 0x65259B8: strdup (strdup.c:42)
+ n0: 22943 0x400C0FF: _dl_new_object (dl-object.c:73)
+ n0: 18656 0x7BC1172: process_repository_item (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 18480 0x7BCC60E: mca_base_var_group_register (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 17688 0x73D6AB7: g_malloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.4)
+ n0: 16632 0xB65E3FF: ???
+ n0: 14529 0x7BC3F86: mca_base_var_generate_full_name4 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 14048 0x73D6B0F: g_malloc0 (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.4)
+#-----------
+snapshot=134
+#-----------
+time=1645
+mem_heap_B=639048
+mem_heap_extra_B=76720
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=135
+#-----------
+time=1650
+mem_heap_B=642604
+mem_heap_extra_B=76924
+mem_stacks_B=0
+heap_tree=detailed
+n12: 642604 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 158528 0x7B9A33C: opal_hash_table_init2 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 144192 0xB60195C: ???
+ n0: 121490 in 298 places, all below massif's threshold (1.00%)
+ n0: 46536 0x7BC4810: register_variable (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 43646 0x65259B8: strdup (strdup.c:42)
+ n0: 27776 0x400C0FF: _dl_new_object (dl-object.c:73)
+ n0: 18760 0x7BCC60E: mca_base_var_group_register (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 18656 0x7BC1172: process_repository_item (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 17688 0x73D6AB7: g_malloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.4)
+ n0: 16632 0xB65E3FF: ???
+ n0: 14652 0x7BC3F86: mca_base_var_generate_full_name4 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 14048 0x73D6B0F: g_malloc0 (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.4)
+#-----------
+snapshot=136
+#-----------
+time=1655
+mem_heap_B=648951
+mem_heap_extra_B=78313
+mem_stacks_B=0
+heap_tree=detailed
+n12: 648951 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 158528 0x7B9A33C: opal_hash_table_init2 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 144192 0xB60195C: ???
+ n0: 122831 in 298 places, all below massif's threshold (1.00%)
+ n0: 47712 0x7BC4810: register_variable (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 43793 0x65259B8: strdup (strdup.c:42)
+ n0: 30195 0x400C0FF: _dl_new_object (dl-object.c:73)
+ n0: 19600 0x7BCC60E: mca_base_var_group_register (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 18656 0x7BC1172: process_repository_item (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 17688 0x73D6AB7: g_malloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.4)
+ n0: 16632 0xB65E3FF: ???
+ n0: 15076 0x7BC3F86: mca_base_var_generate_full_name4 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 14048 0x73D6B0F: g_malloc0 (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.4)
+#-----------
+snapshot=137
+#-----------
+time=1660
+mem_heap_B=649285
+mem_heap_extra_B=79339
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=138
+#-----------
+time=1668
+mem_heap_B=649261
+mem_heap_extra_B=79939
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=139
+#-----------
+time=1673
+mem_heap_B=653826
+mem_heap_extra_B=80158
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=140
+#-----------
+time=1678
+mem_heap_B=658520
+mem_heap_extra_B=81784
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=141
+#-----------
+time=1685
+mem_heap_B=662061
+mem_heap_extra_B=83155
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=142
+#-----------
+time=1689
+mem_heap_B=664779
+mem_heap_extra_B=83789
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=143
+#-----------
+time=1695
+mem_heap_B=669711
+mem_heap_extra_B=84049
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=144
+#-----------
+time=1703
+mem_heap_B=675402
+mem_heap_extra_B=85958
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=145
+#-----------
+time=1708
+mem_heap_B=680117
+mem_heap_extra_B=86819
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=146
+#-----------
+time=1716
+mem_heap_B=683941
+mem_heap_extra_B=86939
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=147
+#-----------
+time=1724
+mem_heap_B=683978
+mem_heap_extra_B=86958
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=148
+#-----------
+time=1729
+mem_heap_B=687590
+mem_heap_extra_B=87146
+mem_stacks_B=0
+heap_tree=detailed
+n13: 687590 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 158528 0x7B9A33C: opal_hash_table_init2 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 144192 0xB60195C: ???
+ n0: 122044 in 301 places, all below massif's threshold (1.00%)
+ n0: 56280 0x7BC4810: register_variable (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 45706 0x65259B8: strdup (strdup.c:42)
+ n0: 42242 0x400C0FF: _dl_new_object (dl-object.c:73)
+ n0: 24360 0x7BCC60E: mca_base_var_group_register (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 18656 0x7BC1172: process_repository_item (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 18399 0x7BC3F86: mca_base_var_generate_full_name4 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 17688 0x73D6AB7: g_malloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.4)
+ n0: 16632 0xB65E3FF: ???
+ n0: 14048 0x73D6B0F: g_malloc0 (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.4)
+ n0: 8815 0x7B9A899: opal_hash_table_set_value_ptr (in /usr/local/lib/libopen-pal.so.0.0.0)
+#-----------
+snapshot=149
+#-----------
+time=1736
+mem_heap_B=687612
+mem_heap_extra_B=87508
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=150
+#-----------
+time=1741
+mem_heap_B=687575
+mem_heap_extra_B=87473
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=151
+#-----------
+time=1746
+mem_heap_B=693407
+mem_heap_extra_B=89257
+mem_stacks_B=0
+heap_tree=detailed
+n13: 693407 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 158528 0x7B9A33C: opal_hash_table_init2 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 144192 0xB60195C: ???
+ n0: 122285 in 303 places, all below massif's threshold (1.00%)
+ n0: 58632 0x7BC4810: register_variable (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 47690 0x65259B8: strdup (strdup.c:42)
+ n0: 42242 0x400C0FF: _dl_new_object (dl-object.c:73)
+ n0: 24640 0x7BCC60E: mca_base_var_group_register (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 19068 0x7BC3F86: mca_base_var_generate_full_name4 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 18656 0x7BC1172: process_repository_item (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 17688 0x73D6AB7: g_malloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.4)
+ n0: 16632 0xB65E3FF: ???
+ n0: 14048 0x73D6B0F: g_malloc0 (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.4)
+ n0: 9106 0x7B9A899: opal_hash_table_set_value_ptr (in /usr/local/lib/libopen-pal.so.0.0.0)
+#-----------
+snapshot=152
+#-----------
+time=1753
+mem_heap_B=710960
+mem_heap_extra_B=91520
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=153
+#-----------
+time=1757
+mem_heap_B=710976
+mem_heap_extra_B=91528
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=154
+#-----------
+time=1763
+mem_heap_B=711869
+mem_heap_extra_B=91827
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=155
+#-----------
+time=1771
+mem_heap_B=715871
+mem_heap_extra_B=92929
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=156
+#-----------
+time=1777
+mem_heap_B=769485
+mem_heap_extra_B=93211
+mem_stacks_B=0
+heap_tree=detailed
+n13: 769485 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 196128 0xB60195C: ???
+ n0: 170112 0x7B9A33C: opal_hash_table_init2 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 125019 in 310 places, all below massif's threshold (1.00%)
+ n0: 62832 0x7BC4810: register_variable (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 49299 0x65259B8: strdup (strdup.c:42)
+ n0: 43448 0x400C0FF: _dl_new_object (dl-object.c:73)
+ n0: 25760 0x7BCC60E: mca_base_var_group_register (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 20239 0x7BC3F86: mca_base_var_generate_full_name4 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 18656 0x7BC1172: process_repository_item (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 17688 0x73D6AB7: g_malloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.4)
+ n0: 16632 0xB65E3FF: ???
+ n0: 14048 0x73D6B0F: g_malloc0 (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.4)
+ n0: 9624 0x7B9A899: opal_hash_table_set_value_ptr (in /usr/local/lib/libopen-pal.so.0.0.0)
+#-----------
+snapshot=157
+#-----------
+time=1784
+mem_heap_B=764303
+mem_heap_extra_B=92817
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=158
+#-----------
+time=1792
+mem_heap_B=764431
+mem_heap_extra_B=93393
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=159
+#-----------
+time=1796
+mem_heap_B=766946
+mem_heap_extra_B=93822
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=160
+#-----------
+time=1803
+mem_heap_B=777948
+mem_heap_extra_B=94396
+mem_stacks_B=0
+heap_tree=detailed
+n13: 777948 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 196128 0xB60195C: ???
+ n0: 178784 0x7B9A33C: opal_hash_table_init2 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 125172 in 319 places, all below massif's threshold (1.00%)
+ n0: 64008 0x7BC4810: register_variable (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 49665 0x65259B8: strdup (strdup.c:42)
+ n0: 39798 0x400C0FF: _dl_new_object (dl-object.c:73)
+ n0: 26880 0x7BCC60E: mca_base_var_group_register (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 20654 0x7BC3F86: mca_base_var_generate_full_name4 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 18656 0x7BC1172: process_repository_item (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 17688 0x73D6AB7: g_malloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.4)
+ n0: 16632 0xB65E3FF: ???
+ n0: 14048 0x73D6B0F: g_malloc0 (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.4)
+ n0: 9835 0x7B9A899: opal_hash_table_set_value_ptr (in /usr/local/lib/libopen-pal.so.0.0.0)
+#-----------
+snapshot=161
+#-----------
+time=1807
+mem_heap_B=780859
+mem_heap_extra_B=95301
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=162
+#-----------
+time=1814
+mem_heap_B=785227
+mem_heap_extra_B=95893
+mem_stacks_B=0
+heap_tree=detailed
+n13: 785227 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 196128 0xB60195C: ???
+ n0: 178784 0x7B9A33C: opal_hash_table_init2 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 127028 in 319 places, all below massif's threshold (1.00%)
+ n0: 64512 0x7BC4810: register_variable (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 49913 0x65259B8: strdup (strdup.c:42)
+ n0: 43419 0x400C0FF: _dl_new_object (dl-object.c:73)
+ n0: 27720 0x7BCC60E: mca_base_var_group_register (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 20791 0x7BC3F86: mca_base_var_generate_full_name4 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 18656 0x7BC1172: process_repository_item (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 17688 0x73D6AB7: g_malloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.4)
+ n0: 16632 0xB65E3FF: ???
+ n0: 14048 0x73D6B0F: g_malloc0 (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.4)
+ n0: 9908 0x7B9A899: opal_hash_table_set_value_ptr (in /usr/local/lib/libopen-pal.so.0.0.0)
+#-----------
+snapshot=163
+#-----------
+time=1822
+mem_heap_B=786938
+mem_heap_extra_B=96974
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=164
+#-----------
+time=1830
+mem_heap_B=788900
+mem_heap_extra_B=97188
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=165
+#-----------
+time=1835
+mem_heap_B=789912
+mem_heap_extra_B=97296
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=166
+#-----------
+time=1840
+mem_heap_B=801563
+mem_heap_extra_B=97565
+mem_stacks_B=0
+heap_tree=detailed
+n13: 801563 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 196128 0xB60195C: ???
+ n0: 178784 0x7B9A33C: opal_hash_table_init2 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 142195 in 337 places, all below massif's threshold (1.00%)
+ n0: 66192 0x7BC4810: register_variable (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 50453 0x65259B8: strdup (strdup.c:42)
+ n0: 41004 0x400C0FF: _dl_new_object (dl-object.c:73)
+ n0: 28280 0x7BCC60E: mca_base_var_group_register (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 21342 0x7BC3F86: mca_base_var_generate_full_name4 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 18656 0x7BC1172: process_repository_item (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 17688 0x73D6AB7: g_malloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.4)
+ n0: 16632 0xB65E3FF: ???
+ n0: 14048 0x73D6B0F: g_malloc0 (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.4)
+ n0: 10161 0x7B9A899: opal_hash_table_set_value_ptr (in /usr/local/lib/libopen-pal.so.0.0.0)
+#-----------
+snapshot=167
+#-----------
+time=1848
+mem_heap_B=794953
+mem_heap_extra_B=97407
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=168
+#-----------
+time=1856
+mem_heap_B=792654
+mem_heap_extra_B=97434
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=169
+#-----------
+time=1864
+mem_heap_B=794046
+mem_heap_extra_B=97538
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=170
+#-----------
+time=1872
+mem_heap_B=795038
+mem_heap_extra_B=97594
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=171
+#-----------
+time=1876
+mem_heap_B=795294
+mem_heap_extra_B=97594
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=172
+#-----------
+time=1882
+mem_heap_B=862967
+mem_heap_extra_B=97777
+mem_stacks_B=0
+heap_tree=detailed
+n13: 862967 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 245056 0x7B9A33C: opal_hash_table_init2 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 196128 0xB60195C: ???
+ n0: 137430 in 358 places, all below massif's threshold (1.00%)
+ n0: 66192 0x7BC4810: register_variable (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 50334 0x65259B8: strdup (strdup.c:42)
+ n0: 41004 0x400C0FF: _dl_new_object (dl-object.c:73)
+ n0: 28280 0x7BCC60E: mca_base_var_group_register (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 21350 0x7BC3F86: mca_base_var_generate_full_name4 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 18656 0x7BC1172: process_repository_item (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 17688 0x73D6AB7: g_malloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.4)
+ n0: 16632 0xB65E3FF: ???
+ n0: 14048 0x73D6B0F: g_malloc0 (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.4)
+ n0: 10169 0x7B9A899: opal_hash_table_set_value_ptr (in /usr/local/lib/libopen-pal.so.0.0.0)
+#-----------
+snapshot=173
+#-----------
+time=1890
+mem_heap_B=872444
+mem_heap_extra_B=98484
+mem_stacks_B=0
+heap_tree=detailed
+n13: 872444 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 245056 0x7B9A33C: opal_hash_table_init2 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 196128 0xB60195C: ???
+ n0: 145726 in 361 places, all below massif's threshold (1.00%)
+ n0: 66528 0x7BC4810: register_variable (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 50522 0x65259B8: strdup (strdup.c:42)
+ n0: 41004 0x400C0FF: _dl_new_object (dl-object.c:73)
+ n0: 28840 0x7BCC60E: mca_base_var_group_register (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 21411 0x7BC3F86: mca_base_var_generate_full_name4 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 18656 0x7BC1172: process_repository_item (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 17688 0x73D6AB7: g_malloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.4)
+ n0: 16632 0xB65E3FF: ???
+ n0: 14048 0x73D6B0F: g_malloc0 (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.4)
+ n0: 10205 0x7B9A899: opal_hash_table_set_value_ptr (in /usr/local/lib/libopen-pal.so.0.0.0)
+#-----------
+snapshot=174
+#-----------
+time=1896
+mem_heap_B=878958
+mem_heap_extra_B=99938
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=175
+#-----------
+time=1901
+mem_heap_B=883511
+mem_heap_extra_B=101089
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=176
+#-----------
+time=1908
+mem_heap_B=889007
+mem_heap_extra_B=102545
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=177
+#-----------
+time=1913
+mem_heap_B=900040
+mem_heap_extra_B=103304
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=178
+#-----------
+time=1919
+mem_heap_B=912065
+mem_heap_extra_B=103335
+mem_stacks_B=0
+heap_tree=detailed
+n14: 912065 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 245056 0x7B9A33C: opal_hash_table_init2 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 196128 0xB60195C: ???
+ n0: 152400 in 363 places, all below massif's threshold (1.00%)
+ n0: 71064 0x7BC4810: register_variable (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 52121 0x65259B8: strdup (strdup.c:42)
+ n0: 45857 0x400C0FF: _dl_new_object (dl-object.c:73)
+ n0: 31640 0x7BCC60E: mca_base_var_group_register (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 23144 0x7BC3F86: mca_base_var_generate_full_name4 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 18656 0x7BC1172: process_repository_item (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 17688 0x73D6AB7: g_malloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.4)
+ n0: 16632 0xB65E3FF: ???
+ n0: 16568 0x7B99A84: opal_free_list_grow_st (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 14048 0x73D6B0F: g_malloc0 (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.4)
+ n0: 11063 0x7B9A899: opal_hash_table_set_value_ptr (in /usr/local/lib/libopen-pal.so.0.0.0)
+#-----------
+snapshot=179
+#-----------
+time=1925
+mem_heap_B=919703
+mem_heap_extra_B=105873
+mem_stacks_B=0
+heap_tree=detailed
+n14: 919703 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 245056 0x7B9A33C: opal_hash_table_init2 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 196128 0xB60195C: ???
+ n0: 153554 in 365 places, all below massif's threshold (1.00%)
+ n0: 73080 0x7BC4810: register_variable (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 53121 0x65259B8: strdup (strdup.c:42)
+ n0: 47062 0x400C0FF: _dl_new_object (dl-object.c:73)
+ n0: 33040 0x7BCC60E: mca_base_var_group_register (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 23733 0x7BC3F86: mca_base_var_generate_full_name4 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 18656 0x7BC1172: process_repository_item (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 17688 0x73D6AB7: g_malloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.4)
+ n0: 16632 0xB65E3FF: ???
+ n0: 16568 0x7B99A84: opal_free_list_grow_st (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 14048 0x73D6B0F: g_malloc0 (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.4)
+ n0: 11337 0x7B9A899: opal_hash_table_set_value_ptr (in /usr/local/lib/libopen-pal.so.0.0.0)
+#-----------
+snapshot=180
+#-----------
+time=1932
+mem_heap_B=926435
+mem_heap_extra_B=106501
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=181
+#-----------
+time=1937
+mem_heap_B=929262
+mem_heap_extra_B=107010
+mem_stacks_B=0
+heap_tree=detailed
+n14: 929262 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 245056 0x7B9A33C: opal_hash_table_init2 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 196128 0xB60195C: ???
+ n0: 156368 in 365 places, all below massif's threshold (1.00%)
+ n0: 73248 0x7BC4810: register_variable (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 53305 0x65259B8: strdup (strdup.c:42)
+ n0: 53097 0x400C0FF: _dl_new_object (dl-object.c:73)
+ n0: 33320 0x7BCC60E: mca_base_var_group_register (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 23778 0x7BC3F86: mca_base_var_generate_full_name4 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 18656 0x7BC1172: process_repository_item (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 17688 0x73D6AB7: g_malloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.4)
+ n0: 16632 0xB65E3FF: ???
+ n0: 16568 0x7B99A84: opal_free_list_grow_st (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 14048 0x73D6B0F: g_malloc0 (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.4)
+ n0: 11370 0x7B9A899: opal_hash_table_set_value_ptr (in /usr/local/lib/libopen-pal.so.0.0.0)
+#-----------
+snapshot=182
+#-----------
+time=1944
+mem_heap_B=937395
+mem_heap_extra_B=109557
+mem_stacks_B=0
+heap_tree=detailed
+n14: 937395 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 245056 0x7B9A33C: opal_hash_table_init2 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 196128 0xB60195C: ???
+ n0: 157019 in 365 places, all below massif's threshold (1.00%)
+ n0: 76272 0x7BC4810: register_variable (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 55917 0x65259B8: strdup (strdup.c:42)
+ n0: 53097 0x400C0FF: _dl_new_object (dl-object.c:73)
+ n0: 33600 0x7BCC60E: mca_base_var_group_register (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 24857 0x7BC3F86: mca_base_var_generate_full_name4 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 18656 0x7BC1172: process_repository_item (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 17688 0x73D6AB7: g_malloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.4)
+ n0: 16632 0xB65E3FF: ???
+ n0: 16568 0x7B99A84: opal_free_list_grow_st (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 14048 0x73D6B0F: g_malloc0 (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.4)
+ n0: 11857 0x7B9A899: opal_hash_table_set_value_ptr (in /usr/local/lib/libopen-pal.so.0.0.0)
+#-----------
+snapshot=183
+#-----------
+time=1950
+mem_heap_B=943814
+mem_heap_extra_B=111538
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=184
+#-----------
+time=1956
+mem_heap_B=950876
+mem_heap_extra_B=113572
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=185
+#-----------
+time=1961
+mem_heap_B=953899
+mem_heap_extra_B=114557
+mem_stacks_B=0
+heap_tree=detailed
+n14: 953899 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 245056 0x7B9A33C: opal_hash_table_init2 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 196128 0xB60195C: ???
+ n0: 157625 in 365 places, all below massif's threshold (1.00%)
+ n0: 83496 0x7BC4810: register_variable (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 61020 0x65259B8: strdup (strdup.c:42)
+ n0: 53097 0x400C0FF: _dl_new_object (dl-object.c:73)
+ n0: 33600 0x7BCC60E: mca_base_var_group_register (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 27338 0x7BC3F86: mca_base_var_generate_full_name4 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 18656 0x7BC1172: process_repository_item (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 17688 0x73D6AB7: g_malloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.4)
+ n0: 16632 0xB65E3FF: ???
+ n0: 16568 0x7B99A84: opal_free_list_grow_st (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 14048 0x73D6B0F: g_malloc0 (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.4)
+ n0: 12947 0x7B9A899: opal_hash_table_set_value_ptr (in /usr/local/lib/libopen-pal.so.0.0.0)
+#-----------
+snapshot=186
+#-----------
+time=1967
+mem_heap_B=962465
+mem_heap_extra_B=116783
+mem_stacks_B=0
+heap_tree=detailed
+n14: 962465 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 245056 0x7B9A33C: opal_hash_table_init2 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 196128 0xB60195C: ???
+ n0: 159094 in 366 places, all below massif's threshold (1.00%)
+ n0: 86520 0x7BC4810: register_variable (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 63599 0x65259B8: strdup (strdup.c:42)
+ n0: 53097 0x400C0FF: _dl_new_object (dl-object.c:73)
+ n0: 33600 0x7BCC60E: mca_base_var_group_register (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 28376 0x7BC3F86: mca_base_var_generate_full_name4 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 18656 0x7BC1172: process_repository_item (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 17688 0x73D6AB7: g_malloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.4)
+ n0: 16632 0xB65E3FF: ???
+ n0: 16568 0x7B99A84: opal_free_list_grow_st (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 14048 0x73D6B0F: g_malloc0 (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.4)
+ n0: 13403 0x7B9A899: opal_hash_table_set_value_ptr (in /usr/local/lib/libopen-pal.so.0.0.0)
+#-----------
+snapshot=187
+#-----------
+time=1972
+mem_heap_B=965650
+mem_heap_extra_B=117886
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=188
+#-----------
+time=1976
+mem_heap_B=970822
+mem_heap_extra_B=119394
+mem_stacks_B=0
+heap_tree=detailed
+n14: 970822 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 245056 0x7B9A33C: opal_hash_table_init2 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 196128 0xB60195C: ???
+ n0: 159550 in 367 places, all below massif's threshold (1.00%)
+ n0: 90384 0x7BC4810: register_variable (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 65789 0x65259B8: strdup (strdup.c:42)
+ n0: 53097 0x400C0FF: _dl_new_object (dl-object.c:73)
+ n0: 33600 0x7BCC60E: mca_base_var_group_register (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 29657 0x7BC3F86: mca_base_var_generate_full_name4 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 18656 0x7BC1172: process_repository_item (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 17688 0x73D6AB7: g_malloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.4)
+ n0: 16632 0xB65E3FF: ???
+ n0: 16568 0x7B99A84: opal_free_list_grow_st (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 14048 0x73D6B0F: g_malloc0 (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.4)
+ n0: 13969 0x7B9A899: opal_hash_table_set_value_ptr (in /usr/local/lib/libopen-pal.so.0.0.0)
+#-----------
+snapshot=189
+#-----------
+time=1981
+mem_heap_B=975066
+mem_heap_extra_B=120486
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=190
+#-----------
+time=1986
+mem_heap_B=979473
+mem_heap_extra_B=121847
+mem_stacks_B=0
+heap_tree=detailed
+n14: 979473 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 245056 0x7B9A33C: opal_hash_table_init2 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 196128 0xB60195C: ???
+ n0: 160774 in 367 places, all below massif's threshold (1.00%)
+ n0: 93912 0x7BC4810: register_variable (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 67991 0x65259B8: strdup (strdup.c:42)
+ n0: 53097 0x400C0FF: _dl_new_object (dl-object.c:73)
+ n0: 33880 0x7BCC60E: mca_base_var_group_register (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 30647 0x7BC3F86: mca_base_var_generate_full_name4 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 18656 0x7BC1172: process_repository_item (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 17688 0x73D6AB7: g_malloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.4)
+ n0: 16632 0xB65E3FF: ???
+ n0: 16568 0x7B99A84: opal_free_list_grow_st (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 14396 0x7B9A899: opal_hash_table_set_value_ptr (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 14048 0x73D6B0F: g_malloc0 (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.4)
+#-----------
+snapshot=191
+#-----------
+time=1990
+mem_heap_B=983975
+mem_heap_extra_B=123161
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=192
+#-----------
+time=1995
+mem_heap_B=988028
+mem_heap_extra_B=124508
+mem_stacks_B=0
+heap_tree=detailed
+n14: 988028 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 245056 0x7B9A33C: opal_hash_table_init2 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 196128 0xB60195C: ???
+ n0: 161241 in 367 places, all below massif's threshold (1.00%)
+ n0: 97776 0x7BC4810: register_variable (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 70483 0x65259B8: strdup (strdup.c:42)
+ n0: 53097 0x400C0FF: _dl_new_object (dl-object.c:73)
+ n0: 33880 0x7BCC60E: mca_base_var_group_register (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 31851 0x7BC3F86: mca_base_var_generate_full_name4 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 18656 0x7BC1172: process_repository_item (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 17688 0x73D6AB7: g_malloc (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.4)
+ n0: 16632 0xB65E3FF: ???
+ n0: 16568 0x7B99A84: opal_free_list_grow_st (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 14924 0x7B9A899: opal_hash_table_set_value_ptr (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 14048 0x73D6B0F: g_malloc0 (in /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.5600.4)
+#-----------
+snapshot=193
+#-----------
+time=2001
+mem_heap_B=994116
+mem_heap_extra_B=126364
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=194
+#-----------
+time=2007
+mem_heap_B=996910
+mem_heap_extra_B=126642
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=195
+#-----------
+time=2014
+mem_heap_B=994872
+mem_heap_extra_B=126424
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=196
+#-----------
+time=2021
+mem_heap_B=2580215
+mem_heap_extra_B=127065
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=197
+#-----------
+time=2027
+mem_heap_B=2581623
+mem_heap_extra_B=127545
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=198
+#-----------
+time=2031
+mem_heap_B=2582221
+mem_heap_extra_B=127571
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=199
+#-----------
+time=2037
+mem_heap_B=2664705
+mem_heap_extra_B=127639
+mem_stacks_B=0
+heap_tree=detailed
+n10: 2664705 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 1599200 0x7B99A84: opal_free_list_grow_st (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 262926 in 385 places, all below massif's threshold (1.00%)
+ n0: 247008 0x7B9A33C: opal_hash_table_init2 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 196128 0xB60195C: ???
+ n0: 102312 0x7BC4810: register_variable (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 72519 0x65259B8: strdup (strdup.c:42)
+ n0: 65544 0x7BE0CE8: opal_show_help_yylex (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 51888 0x400C0FF: _dl_new_object (dl-object.c:73)
+ n0: 33880 0x7BCC60E: mca_base_var_group_register (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 33300 0x7BC3F86: mca_base_var_generate_full_name4 (in /usr/local/lib/libopen-pal.so.0.0.0)
+#-----------
+snapshot=200
+#-----------
+time=2045
+mem_heap_B=2582596
+mem_heap_extra_B=127796
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=201
+#-----------
+time=2053
+mem_heap_B=2587862
+mem_heap_extra_B=127898
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=202
+#-----------
+time=2057
+mem_heap_B=2584047
+mem_heap_extra_B=127625
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=203
+#-----------
+time=2062
+mem_heap_B=2584739
+mem_heap_extra_B=127693
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=204
+#-----------
+time=2068
+mem_heap_B=2588890
+mem_heap_extra_B=129070
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=205
+#-----------
+time=2072
+mem_heap_B=2592457
+mem_heap_extra_B=130303
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=206
+#-----------
+time=2077
+mem_heap_B=2595351
+mem_heap_extra_B=131033
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=207
+#-----------
+time=2081
+mem_heap_B=2600674
+mem_heap_extra_B=131326
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=208
+#-----------
+time=2087
+mem_heap_B=2605762
+mem_heap_extra_B=131614
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=209
+#-----------
+time=2091
+mem_heap_B=2609159
+mem_heap_extra_B=131881
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=210
+#-----------
+time=2098
+mem_heap_B=2617343
+mem_heap_extra_B=133913
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=211
+#-----------
+time=2105
+mem_heap_B=2624350
+mem_heap_extra_B=136210
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=212
+#-----------
+time=2112
+mem_heap_B=2630719
+mem_heap_extra_B=138465
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=213
+#-----------
+time=2117
+mem_heap_B=2636961
+mem_heap_extra_B=140151
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=214
+#-----------
+time=2124
+mem_heap_B=2645245
+mem_heap_extra_B=142347
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=215
+#-----------
+time=2131
+mem_heap_B=2654944
+mem_heap_extra_B=145032
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=216
+#-----------
+time=2135
+mem_heap_B=2659631
+mem_heap_extra_B=146177
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=217
+#-----------
+time=2141
+mem_heap_B=2662757
+mem_heap_extra_B=146939
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=218
+#-----------
+time=2147
+mem_heap_B=2667618
+mem_heap_extra_B=147590
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=219
+#-----------
+time=2155
+mem_heap_B=2677156
+mem_heap_extra_B=149900
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=220
+#-----------
+time=2159
+mem_heap_B=2679580
+mem_heap_extra_B=149972
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=221
+#-----------
+time=2166
+mem_heap_B=2678636
+mem_heap_extra_B=149940
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=222
+#-----------
+time=2173
+mem_heap_B=2682276
+mem_heap_extra_B=149924
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=223
+#-----------
+time=2183
+mem_heap_B=6877508
+mem_heap_extra_B=153036
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=224
+#-----------
+time=2187
+mem_heap_B=7027244
+mem_heap_extra_B=158252
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=225
+#-----------
+time=2193
+mem_heap_B=7031030
+mem_heap_extra_B=158882
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=226
+#-----------
+time=2205
+mem_heap_B=7031286
+mem_heap_extra_B=158882
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=227
+#-----------
+time=2211
+mem_heap_B=7031958
+mem_heap_extra_B=158914
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=228
+#-----------
+time=2215
+mem_heap_B=7036364
+mem_heap_extra_B=159212
+mem_stacks_B=0
+heap_tree=detailed
+n7: 7036364 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 4451072 0x7B9A33C: opal_hash_table_init2 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 1604272 0x7B99A84: opal_free_list_grow_st (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 424506 in 419 places, all below massif's threshold (1.00%)
+ n0: 196128 0xB60195C: ???
+ n0: 143360 0x7C3AD33: mca_mpool_default_alloc (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 127680 0x7BC4810: register_variable (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 89346 0x65259B8: strdup (strdup.c:42)
+#-----------
+snapshot=229
+#-----------
+time=2223
+mem_heap_B=7041441
+mem_heap_extra_B=159615
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=230
+#-----------
+time=2231
+mem_heap_B=7042426
+mem_heap_extra_B=159862
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=231
+#-----------
+time=2236
+mem_heap_B=7042276
+mem_heap_extra_B=159836
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=232
+#-----------
+time=2244
+mem_heap_B=7058291
+mem_heap_extra_B=160069
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=233
+#-----------
+time=2252
+mem_heap_B=7068145
+mem_heap_extra_B=160287
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=234
+#-----------
+time=2260
+mem_heap_B=7087779
+mem_heap_extra_B=160533
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=235
+#-----------
+time=2265
+mem_heap_B=7087843
+mem_heap_extra_B=160541
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=236
+#-----------
+time=2270
+mem_heap_B=7088723
+mem_heap_extra_B=160725
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=237
+#-----------
+time=2277
+mem_heap_B=7087983
+mem_heap_extra_B=160561
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=238
+#-----------
+time=2284
+mem_heap_B=7089667
+mem_heap_extra_B=160629
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=239
+#-----------
+time=2291
+mem_heap_B=7088275
+mem_heap_extra_B=160613
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=240
+#-----------
+time=2296
+mem_heap_B=7089155
+mem_heap_extra_B=160653
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=241
+#-----------
+time=2304
+mem_heap_B=7069699
+mem_heap_extra_B=160437
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=242
+#-----------
+time=2310
+mem_heap_B=7073101
+mem_heap_extra_B=161555
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=243
+#-----------
+time=2313
+mem_heap_B=7075988
+mem_heap_extra_B=162044
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=244
+#-----------
+time=2326
+mem_heap_B=7076228
+mem_heap_extra_B=162052
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=245
+#-----------
+time=2333
+mem_heap_B=7077356
+mem_heap_extra_B=162140
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=246
+#-----------
+time=2338
+mem_heap_B=7079212
+mem_heap_extra_B=162228
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=247
+#-----------
+time=2344
+mem_heap_B=7078732
+mem_heap_extra_B=162204
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=248
+#-----------
+time=2351
+mem_heap_B=7089812
+mem_heap_extra_B=162620
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=249
+#-----------
+time=2356
+mem_heap_B=7092372
+mem_heap_extra_B=162684
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=250
+#-----------
+time=2360
+mem_heap_B=7092812
+mem_heap_extra_B=162740
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=251
+#-----------
+time=2364
+mem_heap_B=7095064
+mem_heap_extra_B=162808
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=252
+#-----------
+time=2369
+mem_heap_B=7095177
+mem_heap_extra_B=162847
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=253
+#-----------
+time=2372
+mem_heap_B=7095308
+mem_heap_extra_B=162844
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=254
+#-----------
+time=2377
+mem_heap_B=7097620
+mem_heap_extra_B=162916
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=255
+#-----------
+time=2384
+mem_heap_B=7097540
+mem_heap_extra_B=162884
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=256
+#-----------
+time=2389
+mem_heap_B=7097780
+mem_heap_extra_B=162900
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=257
+#-----------
+time=2392
+mem_heap_B=7097764
+mem_heap_extra_B=162892
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=258
+#-----------
+time=2404
+mem_heap_B=7097764
+mem_heap_extra_B=162892
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=259
+#-----------
+time=2407
+mem_heap_B=7097852
+mem_heap_extra_B=162876
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=260
+#-----------
+time=2410
+mem_heap_B=7098851
+mem_heap_extra_B=163229
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=261
+#-----------
+time=2413
+mem_heap_B=7110556
+mem_heap_extra_B=163300
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=262
+#-----------
+time=2416
+mem_heap_B=7111380
+mem_heap_extra_B=163468
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=263
+#-----------
+time=2424
+mem_heap_B=7111932
+mem_heap_extra_B=163484
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=264
+#-----------
+time=2427
+mem_heap_B=7116028
+mem_heap_extra_B=163492
+mem_stacks_B=0
+heap_tree=detailed
+n7: 7116028 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 4465792 0x7B9A33C: opal_hash_table_init2 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 1630376 0x7B99A84: opal_free_list_grow_st (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 461016 in 505 places, all below massif's threshold (1.00%)
+ n0: 196128 0xB60195C: ???
+ n0: 143360 0x7C3AD33: mca_mpool_default_alloc (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 129024 0x7BC4810: register_variable (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 90332 0x65259B8: strdup (strdup.c:42)
+#-----------
+snapshot=265
+#-----------
+time=2430
+mem_heap_B=7112404
+mem_heap_extra_B=163476
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=266
+#-----------
+time=2451
+mem_heap_B=7112492
+mem_heap_extra_B=163492
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=267
+#-----------
+time=2454
+mem_heap_B=7112857
+mem_heap_extra_B=163559
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=268
+#-----------
+time=2457
+mem_heap_B=7113582
+mem_heap_extra_B=163658
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=269
+#-----------
+time=2460
+mem_heap_B=7113954
+mem_heap_extra_B=163686
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=270
+#-----------
+time=2463
+mem_heap_B=7114119
+mem_heap_extra_B=163729
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=271
+#-----------
+time=2467
+mem_heap_B=7115484
+mem_heap_extra_B=163964
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=272
+#-----------
+time=2471
+mem_heap_B=7115913
+mem_heap_extra_B=164015
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=273
+#-----------
+time=2474
+mem_heap_B=7116081
+mem_heap_extra_B=164047
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=274
+#-----------
+time=2477
+mem_heap_B=40670834
+mem_heap_extra_B=168118
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=275
+#-----------
+time=2477
+mem_heap_B=40671006
+mem_heap_extra_B=168186
+mem_stacks_B=0
+heap_tree=detailed
+n4: 40671006 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 33554440 0x4E4D1F4: laik_allocateMap (data.c:440)
+ n0: 4465792 0x7B9A33C: opal_hash_table_init2 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 1630376 0x7B99A84: opal_free_list_grow_st (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 1020398 in 526 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=276
+#-----------
+time=2642
+mem_heap_B=40671054
+mem_heap_extra_B=168146
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=277
+#-----------
+time=2645
+mem_heap_B=40671054
+mem_heap_extra_B=168146
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=278
+#-----------
+time=2648
+mem_heap_B=40670534
+mem_heap_extra_B=168138
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=279
+#-----------
+time=2686
+mem_heap_B=40671202
+mem_heap_extra_B=168238
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=280
+#-----------
+time=2689
+mem_heap_B=40670866
+mem_heap_extra_B=168206
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=281
+#-----------
+time=2692
+mem_heap_B=40671418
+mem_heap_extra_B=168222
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=282
+#-----------
+time=2695
+mem_heap_B=40673978
+mem_heap_extra_B=168230
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=283
+#-----------
+time=2698
+mem_heap_B=40679738
+mem_heap_extra_B=168246
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=284
+#-----------
+time=2700
+mem_heap_B=74268467
+mem_heap_extra_B=172373
+mem_stacks_B=0
+heap_tree=detailed
+n4: 74268467 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 67141648 0x4E4D1F4: laik_allocateMap (data.c:440)
+ n0: 4465792 0x7B9A33C: opal_hash_table_init2 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 1630376 0x7B99A84: opal_free_list_grow_st (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 1030651 in 537 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=285
+#-----------
+time=2703
+mem_heap_B=74269111
+mem_heap_extra_B=172369
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=286
+#-----------
+time=2706
+mem_heap_B=74269759
+mem_heap_extra_B=172385
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=287
+#-----------
+time=2709
+mem_heap_B=74335167
+mem_heap_extra_B=172393
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=288
+#-----------
+time=2712
+mem_heap_B=74334615
+mem_heap_extra_B=172377
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=289
+#-----------
+time=2717
+mem_heap_B=74334659
+mem_heap_extra_B=172389
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=290
+#-----------
+time=2779
+mem_heap_B=74335059
+mem_heap_extra_B=172397
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=291
+#-----------
+time=2888
+mem_heap_B=74268315
+mem_heap_extra_B=172333
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=292
+#-----------
+time=2893
+mem_heap_B=40713651
+mem_heap_extra_B=168277
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=293
+#-----------
+time=3307
+mem_heap_B=74268804
+mem_heap_extra_B=172412
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=294
+#-----------
+time=3310
+mem_heap_B=74269541
+mem_heap_extra_B=172467
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=295
+#-----------
+time=3313
+mem_heap_B=74269861
+mem_heap_extra_B=172475
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=296
+#-----------
+time=3316
+mem_heap_B=74272917
+mem_heap_extra_B=172483
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=297
+#-----------
+time=3319
+mem_heap_B=74273730
+mem_heap_extra_B=172566
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=298
+#-----------
+time=3322
+mem_heap_B=74273718
+mem_heap_extra_B=172586
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=299
+#-----------
+time=3357
+mem_heap_B=74273710
+mem_heap_extra_B=172570
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=300
+#-----------
+time=3359
+mem_heap_B=107861943
+mem_heap_extra_B=176665
+mem_stacks_B=0
+heap_tree=detailed
+n4: 107861943 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 100728856 0x4E4D1F4: laik_allocateMap (data.c:440)
+ n0: 4465792 0x7B9A33C: opal_hash_table_init2 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 1630376 0x7B99A84: opal_free_list_grow_st (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 1036919 in 547 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=301
+#-----------
+time=3395
+mem_heap_B=107927863
+mem_heap_extra_B=176633
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=302
+#-----------
+time=3533
+mem_heap_B=107861119
+mem_heap_extra_B=176585
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=303
+#-----------
+time=3537
+mem_heap_B=74306455
+mem_heap_extra_B=172529
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=304
+#-----------
+time=3895
+mem_heap_B=74306880
+mem_heap_extra_B=172584
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=305
+#-----------
+time=3898
+mem_heap_B=74374763
+mem_heap_extra_B=172725
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=306
+#-----------
+time=4217
+mem_heap_B=74308276
+mem_heap_extra_B=172724
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=307
+#-----------
+time=4223
+mem_heap_B=74376159
+mem_heap_extra_B=172881
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=308
+#-----------
+time=4535
+mem_heap_B=74309672
+mem_heap_extra_B=172880
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=309
+#-----------
+time=4541
+mem_heap_B=74310674
+mem_heap_extra_B=173014
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=310
+#-----------
+time=4545
+mem_heap_B=74377555
+mem_heap_extra_B=173037
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=311
+#-----------
+time=4874
+mem_heap_B=74311068
+mem_heap_extra_B=173036
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=312
+#-----------
+time=4878
+mem_heap_B=74312070
+mem_heap_extra_B=173170
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=313
+#-----------
+time=5200
+mem_heap_B=74312464
+mem_heap_extra_B=173192
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=314
+#-----------
+time=5203
+mem_heap_B=74313466
+mem_heap_extra_B=173326
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=315
+#-----------
+time=5539
+mem_heap_B=74313860
+mem_heap_extra_B=173348
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=316
+#-----------
+time=5866
+mem_heap_B=74315256
+mem_heap_extra_B=173504
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=317
+#-----------
+time=6189
+mem_heap_B=74316652
+mem_heap_extra_B=173660
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=318
+#-----------
+time=6195
+mem_heap_B=74384535
+mem_heap_extra_B=173817
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=319
+#-----------
+time=6516
+mem_heap_B=74318048
+mem_heap_extra_B=173816
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=320
+#-----------
+time=6521
+mem_heap_B=74319050
+mem_heap_extra_B=173950
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=321
+#-----------
+time=6524
+mem_heap_B=74318890
+mem_heap_extra_B=173910
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=322
+#-----------
+time=6734
+mem_heap_B=107873543
+mem_heap_extra_B=178033
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=323
+#-----------
+time=6737
+mem_heap_B=107875488
+mem_heap_extra_B=178112
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=324
+#-----------
+time=6738
+mem_heap_B=141430673
+mem_heap_extra_B=182271
+mem_stacks_B=0
+heap_tree=detailed
+n4: 141430673 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 134283288 0x4E4D1F4: laik_allocateMap (data.c:440)
+ n0: 4465792 0x7B9A33C: opal_hash_table_init2 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 1630376 0x7B99A84: opal_free_list_grow_st (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 1051217 in 550 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=325
+#-----------
+time=6738
+mem_heap_B=208540045
+mem_heap_extra_B=186323
+mem_stacks_B=0
+heap_tree=detailed
+n4: 208540045 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 134283288 0x4E4D1F4: laik_allocateMap (data.c:440)
+ n0: 67108864 0x4E43CF1: laik_aseq_allocBuffer (action.c:948)
+ n0: 4465792 0x7B9A33C: opal_hash_table_init2 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 2682101 in 550 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=326
+#-----------
+time=7887
+mem_heap_B=208539681
+mem_heap_extra_B=186271
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=327
+#-----------
+time=7896
+mem_heap_B=141430769
+mem_heap_extra_B=182223
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=328
+#-----------
+time=7899
+mem_heap_B=141498326
+mem_heap_extra_B=182314
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=329
+#-----------
+time=8477
+mem_heap_B=141497546
+mem_heap_extra_B=182286
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=330
+#-----------
+time=8817
+mem_heap_B=141431059
+mem_heap_extra_B=182285
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=331
+#-----------
+time=9103
+mem_heap_B=141432455
+mem_heap_extra_B=182441
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=332
+#-----------
+time=9106
+mem_heap_B=141500338
+mem_heap_extra_B=182598
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=333
+#-----------
+time=9412
+mem_heap_B=141433851
+mem_heap_extra_B=182597
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=334
+#-----------
+time=9417
+mem_heap_B=141434853
+mem_heap_extra_B=182731
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=335
+#-----------
+time=9747
+mem_heap_B=141435247
+mem_heap_extra_B=182753
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=336
+#-----------
+time=9750
+mem_heap_B=141437095
+mem_heap_extra_B=182937
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=337
+#-----------
+time=10068
+mem_heap_B=141436643
+mem_heap_extra_B=182909
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=338
+#-----------
+time=10131
+mem_heap_B=141504814
+mem_heap_extra_B=183098
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=339
+#-----------
+time=10134
+mem_heap_B=141505500
+mem_heap_extra_B=183116
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=340
+#-----------
+time=10137
+mem_heap_B=141507688
+mem_heap_extra_B=183136
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=341
+#-----------
+time=10140
+mem_heap_B=141509811
+mem_heap_extra_B=183693
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=342
+#-----------
+time=10144
+mem_heap_B=141507210
+mem_heap_extra_B=183550
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=343
+#-----------
+time=10147
+mem_heap_B=141507362
+mem_heap_extra_B=183598
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=344
+#-----------
+time=10152
+mem_heap_B=141507690
+mem_heap_extra_B=183582
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=345
+#-----------
+time=10155
+mem_heap_B=141507090
+mem_heap_extra_B=183542
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=346
+#-----------
+time=10460
+mem_heap_B=141440603
+mem_heap_extra_B=183541
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=347
+#-----------
+time=10464
+mem_heap_B=141508486
+mem_heap_extra_B=183698
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=348
+#-----------
+time=10788
+mem_heap_B=141441999
+mem_heap_extra_B=183697
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=349
+#-----------
+time=10791
+mem_heap_B=141448394
+mem_heap_extra_B=183846
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=350
+#-----------
+time=11076
+mem_heap_B=141447507
+mem_heap_extra_B=183861
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=351
+#-----------
+time=11080
+mem_heap_B=141515390
+mem_heap_extra_B=184002
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=352
+#-----------
+time=11130
+mem_heap_B=141448911
+mem_heap_extra_B=183993
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=353
+#-----------
+time=11145
+mem_heap_B=141449015
+mem_heap_extra_B=184009
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=354
+#-----------
+time=11152
+mem_heap_B=141449527
+mem_heap_extra_B=184017
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=355
+#-----------
+time=11406
+mem_heap_B=141449799
+mem_heap_extra_B=184033
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=356
+#-----------
+time=11409
+mem_heap_B=141451387
+mem_heap_extra_B=184189
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=357
+#-----------
+time=11730
+mem_heap_B=141451043
+mem_heap_extra_B=184173
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=358
+#-----------
+time=11733
+mem_heap_B=141451961
+mem_heap_extra_B=184455
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=359
+#-----------
+time=11736
+mem_heap_B=141451545
+mem_heap_extra_B=184375
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=360
+#-----------
+time=11739
+mem_heap_B=141452221
+mem_heap_extra_B=184587
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=361
+#-----------
+time=11742
+mem_heap_B=141456137
+mem_heap_extra_B=184855
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=362
+#-----------
+time=11745
+mem_heap_B=141460528
+mem_heap_extra_B=185056
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=363
+#-----------
+time=11750
+mem_heap_B=152657522
+mem_heap_extra_B=183950
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=364
+#-----------
+time=11754
+mem_heap_B=163815215
+mem_heap_extra_B=184041
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=365
+#-----------
+time=11756
+mem_heap_B=253307373
+mem_heap_extra_B=192307
+mem_stacks_B=0
+heap_tree=detailed
+n4: 253307373 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 201381224 0x4E4D1F4: laik_allocateMap (data.c:440)
+ n0: 44744704 0x4E43CF1: laik_aseq_allocBuffer (action.c:948)
+ n0: 4467776 0x7B9A33C: opal_hash_table_init2 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 2713669 in 572 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=366
+#-----------
+time=12267
+mem_heap_B=253306365
+mem_heap_extra_B=192275
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=367
+#-----------
+time=12272
+mem_heap_B=208561613
+mem_heap_extra_B=188227
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=368
+#-----------
+time=12422
+mem_heap_B=208560829
+mem_heap_extra_B=188187
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=369
+#-----------
+time=12428
+mem_heap_B=175006333
+mem_heap_extra_B=184139
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=370
+#-----------
+time=12433
+mem_heap_B=141451453
+mem_heap_extra_B=180091
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=371
+#-----------
+time=12704
+mem_heap_B=141452005
+mem_heap_extra_B=180107
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=372
+#-----------
+time=12710
+mem_heap_B=96706453
+mem_heap_extra_B=176027
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=373
+#-----------
+time=12972
+mem_heap_B=141451850
+mem_heap_extra_B=180158
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=374
+#-----------
+time=12972
+mem_heap_B=275656396
+mem_heap_extra_B=188420
+mem_stacks_B=0
+heap_tree=peak
+n4: 275656396 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 179000680 0x4E4D1F4: laik_allocateMap (data.c:440)
+ n0: 89473024 0x4E43CF1: laik_aseq_allocBuffer (action.c:948)
+ n0: 4467776 0x7B9A33C: opal_hash_table_init2 (in /usr/local/lib/libopen-pal.so.0.0.0)
+ n0: 2714916 in 572 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=375
+#-----------
+time=13428
+mem_heap_B=275656496
+mem_heap_extra_B=188408
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=376
+#-----------
+time=13893
+mem_heap_B=275656480
+mem_heap_extra_B=188400
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=377
+#-----------
+time=13904
+mem_heap_B=186183408
+mem_heap_extra_B=184352
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=378
+#-----------
+time=14610
+mem_heap_B=231043729
+mem_heap_extra_B=187079
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=379
+#-----------
+time=14768
+mem_heap_B=230966305
+mem_heap_extra_B=187023
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=380
+#-----------
+time=14773
+mem_heap_B=186221369
+mem_heap_extra_B=182951
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=381
+#-----------
+time=15376
+mem_heap_B=186221794
+mem_heap_extra_B=183022
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=382
+#-----------
+time=15381
+mem_heap_B=186222788
+mem_heap_extra_B=183164
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=383
+#-----------
+time=15838
+mem_heap_B=186223042
+mem_heap_extra_B=183182
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=384
+#-----------
+time=15842
+mem_heap_B=186301457
+mem_heap_extra_B=183351
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=385
+#-----------
+time=16301
+mem_heap_B=186224290
+mem_heap_extra_B=183342
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=386
+#-----------
+time=16314
+mem_heap_B=186225284
+mem_heap_extra_B=183484
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=387
+#-----------
+time=16818
+mem_heap_B=186225538
+mem_heap_extra_B=183502
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=388
+#-----------
+time=16821
+mem_heap_B=186303953
+mem_heap_extra_B=183671
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=389
+#-----------
+time=17282
+mem_heap_B=186226786
+mem_heap_extra_B=183662
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=390
+#-----------
+time=17292
+mem_heap_B=186227780
+mem_heap_extra_B=183804
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=391
+#-----------
+time=17295
+mem_heap_B=186305201
+mem_heap_extra_B=183831
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=392
+#-----------
+time=17761
+mem_heap_B=186228034
+mem_heap_extra_B=183822
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=393
+#-----------
+time=17771
+mem_heap_B=186229028
+mem_heap_extra_B=183964
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=394
+#-----------
+time=18229
+mem_heap_B=186229282
+mem_heap_extra_B=183982
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=395
+#-----------
+time=18234
+mem_heap_B=186230276
+mem_heap_extra_B=184124
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=396
+#-----------
+time=18720
+mem_heap_B=186230530
+mem_heap_extra_B=184142
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=397
+#-----------
+time=18725
+mem_heap_B=186231524
+mem_heap_extra_B=184284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=398
+#-----------
+time=19195
+mem_heap_B=186231778
+mem_heap_extra_B=184302
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=399
+#-----------
+time=19198
+mem_heap_B=186310193
+mem_heap_extra_B=184471
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=400
+#-----------
+time=19568
+mem_heap_B=186233026
+mem_heap_extra_B=184462
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=401
+#-----------
+time=19585
+mem_heap_B=186234020
+mem_heap_extra_B=184604
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=402
+#-----------
+time=19588
+mem_heap_B=186234032
+mem_heap_extra_B=184696
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=403
+#-----------
+time=19594
+mem_heap_B=141505320
+mem_heap_extra_B=180624
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=404
+#-----------
+time=19599
+mem_heap_B=96760168
+mem_heap_extra_B=176576
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=405
+#-----------
+time=19817
+mem_heap_B=141505553
+mem_heap_extra_B=180711
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=406
+#-----------
+time=20813
+mem_heap_B=275709735
+mem_heap_extra_B=188937
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=407
+#-----------
+time=20824
+mem_heap_B=186236663
+mem_heap_extra_B=184889
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=408
+#-----------
+time=21591
+mem_heap_B=186313976
+mem_heap_extra_B=184944
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=409
+#-----------
+time=22069
+mem_heap_B=186236809
+mem_heap_extra_B=184935
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=410
+#-----------
+time=22078
+mem_heap_B=186237803
+mem_heap_extra_B=185077
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=411
+#-----------
+time=22559
+mem_heap_B=186238057
+mem_heap_extra_B=185095
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=412
+#-----------
+time=22562
+mem_heap_B=186238891
+mem_heap_extra_B=185197
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=413
+#-----------
+time=23061
+mem_heap_B=186239305
+mem_heap_extra_B=185255
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=414
+#-----------
+time=23550
+mem_heap_B=186240553
+mem_heap_extra_B=185415
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=415
+#-----------
+time=24043
+mem_heap_B=186241801
+mem_heap_extra_B=185575
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=416
+#-----------
+time=24046
+mem_heap_B=186242795
+mem_heap_extra_B=185717
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=417
+#-----------
+time=24528
+mem_heap_B=186243049
+mem_heap_extra_B=185735
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=418
+#-----------
+time=24534
+mem_heap_B=186244043
+mem_heap_extra_B=185877
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=419
+#-----------
+time=25025
+mem_heap_B=186244297
+mem_heap_extra_B=185895
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=420
+#-----------
+time=25028
+mem_heap_B=186323636
+mem_heap_extra_B=186076
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=421
+#-----------
+time=25499
+mem_heap_B=186245545
+mem_heap_extra_B=186055
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=422
+#-----------
+time=25502
+mem_heap_B=186247125
+mem_heap_extra_B=186219
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=423
+#-----------
+time=25972
+mem_heap_B=186246793
+mem_heap_extra_B=186215
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=424
+#-----------
+time=25977
+mem_heap_B=186247787
+mem_heap_extra_B=186357
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=425
+#-----------
+time=26441
+mem_heap_B=186248041
+mem_heap_extra_B=186375
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=426
+#-----------
+time=26445
+mem_heap_B=186249035
+mem_heap_extra_B=186517
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=427
+#-----------
+time=26448
+mem_heap_B=186253478
+mem_heap_extra_B=187210
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=428
+#-----------
+time=26456
+mem_heap_B=186256550
+mem_heap_extra_B=187114
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=429
+#-----------
+time=26459
+mem_heap_B=186254430
+mem_heap_extra_B=187050
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=430
+#-----------
+time=26462
+mem_heap_B=186252208
+mem_heap_extra_B=186928
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=431
+#-----------
+time=26465
+mem_heap_B=186252279
+mem_heap_extra_B=186881
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=432
+#-----------
+time=26468
+mem_heap_B=186240429
+mem_heap_extra_B=186643
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=433
+#-----------
+time=26471
+mem_heap_B=186086045
+mem_heap_extra_B=181027
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=434
+#-----------
+time=26474
+mem_heap_B=186062872
+mem_heap_extra_B=179952
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=435
+#-----------
+time=26477
+mem_heap_B=186060505
+mem_heap_extra_B=179711
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=436
+#-----------
+time=26480
+mem_heap_B=186045425
+mem_heap_extra_B=179591
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=437
+#-----------
+time=26483
+mem_heap_B=186036931
+mem_heap_extra_B=179397
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=438
+#-----------
+time=26486
+mem_heap_B=186034025
+mem_heap_extra_B=179191
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=439
+#-----------
+time=26491
+mem_heap_B=186033281
+mem_heap_extra_B=179119
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=440
+#-----------
+time=26494
+mem_heap_B=186028849
+mem_heap_extra_B=179047
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=441
+#-----------
+time=26497
+mem_heap_B=186016375
+mem_heap_extra_B=177217
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=442
+#-----------
+time=26501
+mem_heap_B=181814787
+mem_heap_extra_B=173965
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=443
+#-----------
+time=26504
+mem_heap_B=181809391
+mem_heap_extra_B=173761
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=444
+#-----------
+time=26507
+mem_heap_B=181803031
+mem_heap_extra_B=173385
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=445
+#-----------
+time=26510
+mem_heap_B=181795194
+mem_heap_extra_B=172254
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=446
+#-----------
+time=26513
+mem_heap_B=181791578
+mem_heap_extra_B=172118
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=447
+#-----------
+time=26516
+mem_heap_B=180205261
+mem_heap_extra_B=171939
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=448
+#-----------
+time=26519
+mem_heap_B=180195299
+mem_heap_extra_B=171653
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=449
+#-----------
+time=26522
+mem_heap_B=180175595
+mem_heap_extra_B=171469
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=450
+#-----------
+time=26525
+mem_heap_B=180105240
+mem_heap_extra_B=171056
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=451
+#-----------
+time=26528
+mem_heap_B=180096176
+mem_heap_extra_B=171008
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=452
+#-----------
+time=26531
+mem_heap_B=180094641
+mem_heap_extra_B=170927
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=453
+#-----------
+time=26534
+mem_heap_B=180087823
+mem_heap_extra_B=170545
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=454
+#-----------
+time=26537
+mem_heap_B=180085917
+mem_heap_extra_B=170339
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=455
+#-----------
+time=26540
+mem_heap_B=180084469
+mem_heap_extra_B=170139
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=456
+#-----------
+time=26543
+mem_heap_B=180083306
+mem_heap_extra_B=170014
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=457
+#-----------
+time=26548
+mem_heap_B=180081440
+mem_heap_extra_B=169576
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=458
+#-----------
+time=26551
+mem_heap_B=180080648
+mem_heap_extra_B=169520
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=459
+#-----------
+time=26554
+mem_heap_B=180078556
+mem_heap_extra_B=169340
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=460
+#-----------
+time=26557
+mem_heap_B=180073589
+mem_heap_extra_B=168891
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=461
+#-----------
+time=26560
+mem_heap_B=180067679
+mem_heap_extra_B=168473
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=462
+#-----------
+time=26563
+mem_heap_B=180048664
+mem_heap_extra_B=168216
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=463
+#-----------
+time=26566
+mem_heap_B=179940282
+mem_heap_extra_B=167774
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=464
+#-----------
+time=26569
+mem_heap_B=179904980
+mem_heap_extra_B=158148
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=465
+#-----------
+time=26572
+mem_heap_B=179809991
+mem_heap_extra_B=152353
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=466
+#-----------
+time=26575
+mem_heap_B=179793516
+mem_heap_extra_B=151044
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=467
+#-----------
+time=26578
+mem_heap_B=179790612
+mem_heap_extra_B=150940
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=468
+#-----------
+time=26581
+mem_heap_B=179787182
+mem_heap_extra_B=150794
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=469
+#-----------
+time=26586
+mem_heap_B=179773706
+mem_heap_extra_B=150598
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=470
+#-----------
+time=26589
+mem_heap_B=179771178
+mem_heap_extra_B=150134
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=471
+#-----------
+time=26592
+mem_heap_B=179764609
+mem_heap_extra_B=149791
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=472
+#-----------
+time=26595
+mem_heap_B=179794142
+mem_heap_extra_B=149554
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=473
+#-----------
+time=26598
+mem_heap_B=179794142
+mem_heap_extra_B=149554
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=474
+#-----------
+time=26601
+mem_heap_B=179794142
+mem_heap_extra_B=149554
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=475
+#-----------
+time=26604
+mem_heap_B=179761311
+mem_heap_extra_B=149537
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=476
+#-----------
+time=26607
+mem_heap_B=179758022
+mem_heap_extra_B=148826
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=477
+#-----------
+time=26610
+mem_heap_B=179751377
+mem_heap_extra_B=148375
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=478
+#-----------
+time=26613
+mem_heap_B=179745907
+mem_heap_extra_B=147853
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=479
+#-----------
+time=26616
+mem_heap_B=179742541
+mem_heap_extra_B=147323
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=480
+#-----------
+time=26619
+mem_heap_B=179717468
+mem_heap_extra_B=140252
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=481
+#-----------
+time=26622
+mem_heap_B=179672484
+mem_heap_extra_B=126524
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=482
+#-----------
+time=26625
+mem_heap_B=179636961
+mem_heap_extra_B=115311
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=483
+#-----------
+time=26628
+mem_heap_B=179609000
+mem_heap_extra_B=106536
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=484
+#-----------
+time=26631
+mem_heap_B=179559454
+mem_heap_extra_B=92482
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=485
+#-----------
+time=26634
+mem_heap_B=179528631
+mem_heap_extra_B=83537
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=486
+#-----------
+time=26637
+mem_heap_B=179490577
+mem_heap_extra_B=76447
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=487
+#-----------
+time=26640
+mem_heap_B=179461567
+mem_heap_extra_B=64009
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=488
+#-----------
+time=26643
+mem_heap_B=179433936
+mem_heap_extra_B=53192
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=489
+#-----------
+time=26646
+mem_heap_B=179339125
+mem_heap_extra_B=46395
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=490
+#-----------
+time=26649
+mem_heap_B=179261590
+mem_heap_extra_B=38626
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=491
+#-----------
+time=26652
+mem_heap_B=179252916
+mem_heap_extra_B=37724
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=492
+#-----------
+time=26655
+mem_heap_B=179208865
+mem_heap_extra_B=30791
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=493
+#-----------
+time=26668
+mem_heap_B=179207327
+mem_heap_extra_B=30625
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=494
+#-----------
+time=26671
+mem_heap_B=179200343
+mem_heap_extra_B=30553
+mem_stacks_B=0
+heap_tree=empty
